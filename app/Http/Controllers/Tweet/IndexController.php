@@ -15,6 +15,6 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('tweet.index', ['name' => 'php']);
+        return 'Single Action!';
     }
 }
