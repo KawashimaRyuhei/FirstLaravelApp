@@ -16,7 +16,6 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         $tweets = Tweet::all();
-        dd($tweets);
         return view('tweet.index')
         ->with('tweets', $tweets);
     }
