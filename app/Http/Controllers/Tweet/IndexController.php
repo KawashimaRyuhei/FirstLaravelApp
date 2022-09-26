@@ -18,7 +18,6 @@ class IndexController extends Controller
         $tweets = Tweet::all();
         dd($tweets);
         return view('tweet.index')
-        ->with('name', 'laravel')
-        ->with('version', '8');
+        ->with('tweets', $tweets);
     }
 }
