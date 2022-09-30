@@ -17,6 +17,9 @@
                 <textarea id="tweet-content" type="text" name="tweet" placeholder="つぶやきを入力"></textarea>
                 <button type="submit">投稿</button>
                 </div>
+                @if(false)
+                <div>投稿限度に達しました</div>
+                @endif
             </form>
         <div>
         @foreach($tweets as $tweet)
