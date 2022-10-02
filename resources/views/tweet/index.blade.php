@@ -15,14 +15,12 @@
                 <label for="tweet-content">つぶやき</label>
                 <span>140文字まで</span>
                 <textarea id="tweet-content" type="text" name="tweet" placeholder="つぶやきを入力"></textarea>
-                error('tweet')
+                @error('tweet')
                 <p style="color: red;">{{ $message }}</p>
+                @enderror
                 <button type="submit">投稿</button>
                 </div>
-                @if(false)
-                @enderror
-                <div>投稿限度に達しました</div>
-                @endif
+                
             </form>
         <div>
         @foreach($tweets as $tweet)
