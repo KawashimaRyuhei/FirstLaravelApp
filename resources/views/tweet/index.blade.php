@@ -20,7 +20,6 @@
                 @enderror
                 <button type="submit">投稿</button>
                 </div>
-                
             </form>
         <div>
         @foreach($tweets as $tweet)
