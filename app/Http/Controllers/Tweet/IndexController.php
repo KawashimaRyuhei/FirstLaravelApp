@@ -15,7 +15,10 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $tweets = Tweet::all();
+        // SQL側でデータをソート（しているので一般的には早い）
+        $tweets = Tweet::orderBy('created_at', 'DESC')->get();
+        // PHP側で取得したデータをソート（しているので遅いことが多い）
+        // $tweets = Tweet::all()->sortByDesc('created_at');
         return view('tweet.index')
         ->with('tweets', $tweets);
     }
