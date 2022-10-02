@@ -27,7 +27,14 @@ class UpdateRequest extends FormRequest
             'tweet' => 'required|max:140'
         ];
     }
-    public function tweet(): string{
+    
+    public function tweet(): string
+    {
         return $this->input('tweet');
+    }
+
+    public function id(): int 
+    {
+        return (int) $this->route('tweetId');
     }
 }
