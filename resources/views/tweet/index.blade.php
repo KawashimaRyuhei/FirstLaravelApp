@@ -7,7 +7,7 @@
         <title>つぶやきアプリ</title>
     </head>
     <body>
-        <h1>つぶやきアプリ</h1>
+        <h1>確認用ページ</h1>
         <div>
             <p>投稿フォーム</p>
             @if (session('feedback.success'))
