@@ -7,7 +7,7 @@
         <title>つぶやきアプリ</title>
     </head>
     <body>
-        <h1>つぶやきを編集する</h1>
+        <h1>編集用ページ</h1>
         <div>
             <a href="{{ route('tweet.index') }}">< 戻る</a>
             <p>投稿フォーム</p>
